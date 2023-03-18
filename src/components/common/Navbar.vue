@@ -40,7 +40,8 @@ const menuItems: Menu[] = [
         <div class="flex-1 ml-5">
             <ul class="flex gap-2 px-1">
                 <li v-for="menuItem in menuItems"><a
-                        class=" cursor-pointer py-2 px-4 rounded-3xl  hover:bg-white border hover:border-gray-300 " :class="menuItem.path === path?'bg-white':''">{{menuItem.name }}</a></li>
+                        class=" cursor-pointer py-2 px-4 rounded-3xl  hover:bg-white border hover:border-gray-300 "
+                        :class="menuItem.path === path ? 'bg-white' : ''">{{ menuItem.name }}</a></li>
             </ul>
         </div>
         <div class="flex-none">
@@ -48,18 +49,10 @@ const menuItems: Menu[] = [
                 <label tabindex="0" class="btn btn-ghost btn-circle">
                     <div class="indicator">
                         <IconCart />
-                        <span class="badge badge-sm indicator-item">8</span>
+
                     </div>
                 </label>
-                <div tabindex="0" class="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow">
-                    <div class="card-body">
-                        <span class="font-bold text-lg">8 Items</span>
-                        <span class="text-info">Subtotal: $999</span>
-                        <div class="card-actions">
-                            <button class="btn btn-primary btn-block">View cart</button>
-                        </div>
-                    </div>
-                </div>
+
             </div>
             <div class="dropdown dropdown-end">
                 <label tabindex="0" class="btn btn-ghost btn-circle avatar">
@@ -69,4 +62,5 @@ const menuItems: Menu[] = [
                 </label>
             </div>
         </div>
-</div></template>
+    </div>
+</template>

@@ -13,15 +13,15 @@ const props = defineProps<{
 </script>
 
 <template>
-    <Carousel :items-to-show="4" :wrap-around="true" >
-        <Slide v-for="book in props.books" :key="book.id" class="mx-2 shadow-md">
-            <img src="@/assets/cover.png" />
+    <Carousel :items-to-show="4" :wrap-around="false" >
+        <Slide v-for="book in props.books" :key="book.id" class="mx-2">
+            <img class="my-4 shadow-md" src="@/assets/cover.png" />
         </Slide>
 
         <template #addons>
             <Navigation>
                 <template #next > <button
-                        class="btn btn-circle bg-base-100 shadow-xl border-0 hover:text-primary hover:bg-base-100 -mr-10 ">
+                        class="btn btn-circle bg-base-100 shadow-xl border-0 hover:text-primary hover:bg-base-100 -mr-10  ">
                         <IconArrowRightVue />
                     </button></template>
                 <template #prev>

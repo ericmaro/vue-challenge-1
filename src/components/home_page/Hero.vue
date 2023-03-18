@@ -6,7 +6,7 @@
             <div class="flex-1 mt-8">
                 <p class="py-6 text-5xl">Get your <span class="font-semibold">favourite</span><br />
                     books all in one place</p>
-                <button class="btn btn-primary rounded-full capitalize">View Categories</button>
+                <a class="btn-primary px-8 py-3 rounded-full capitalize cursor-pointer text-white">View Categories</a>
             </div>
         </div>
     </div>
