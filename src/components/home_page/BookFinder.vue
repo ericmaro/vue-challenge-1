@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import IconSearch from '@/components/icons/IconSearch.vue';
 import { useCategoryStore } from '@/stores/category';
-import { ref } from 'vue';
+import { ref, watch } from 'vue';
 const categoryStore = useCategoryStore();
 categoryStore.loadCategories();
 const selectedCategory = ref('');
@@ -13,6 +13,12 @@ const search = () => {
         text: searchText.value
     })
 }
+
+watch(searchText, () => {
+    if(searchText.value.length === 0){
+       search();  
+    }
+})
 </script>
 
 <template>
