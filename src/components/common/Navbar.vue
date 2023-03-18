@@ -32,9 +32,9 @@ const menuItems: Menu[] = [
 
 <template>
     <div class="max-w-6xl mx-auto px-5 sm:px-6 navbar">
-        <div class="flex-none">
+        <div class="flex-none -ml-8">
             <router-link to="/">
-                <img src="@/assets/logo.svg" class="h-10" />
+                <img src="@/assets/logo.svg" class="h-14" />
             </router-link>
         </div>
         <div class="flex-1 ml-5">
@@ -44,7 +44,7 @@ const menuItems: Menu[] = [
                         :class="menuItem.path === path ? 'bg-white' : ''">{{ menuItem.name }}</a></li>
             </ul>
         </div>
-        <div class="flex-none">
+        <div class="flex-none m-8">
             <div class="dropdown dropdown-end">
                 <label tabindex="0" class="btn btn-ghost btn-circle">
                     <div class="indicator">
