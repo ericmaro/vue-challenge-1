@@ -34,7 +34,7 @@ watch(searchText, () => {
                 
                 </div>
 
-                <input v-model="searchText" type="text" placeholder="Find the book you like..."
+                <input v-model="searchText" type="text" v-on:keyup.enter="search" placeholder="Find the book you like..."
                     class="input bg-transparent flex-1 focus: ring-0 focus: border-0 focus:outline-none" />
                 <button @click="search" class="btn btn-primary capitalize ml-5 w-[180px] text-lg font-light text-white">
                     Search <span class="bg-transparent ml-3">
