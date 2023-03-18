@@ -1,6 +1,10 @@
-# library
+# Challenge
 
-This template should help get you started developing with Vue 3 in Vite.
+Create a Demo site per given figma design in less than 48hrs
+
+## Live Demo
+
+[Demo](https://vue-challenge-1.vercel.app/)
 
 ## Recommended IDE Setup
 
